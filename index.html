@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MovieStar</title>
+        <meta charset="UTF -8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="https://kit.fontawesome.com/625034931d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="mf.css">
+        <link rel="icon" type="image/x.icon" href="imgs/Red_Star_PNG_Clipart.png">
+    </head>
+    <body>
+        <nav class="navbar" id="navbar">
+            <div class="logo">
+                <h2>Movie</h2>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Type a title  " id="searchinput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="log">
+                <button id="open-login">Log in</button>
+                <i class="fa-solid fa-star" id="avatarIcon" style="display: none; font-size: 22px; color: gold; cursor: pointer;"></i>
+                <i class="fa-regular fa-bookmark" id="seenIcon"></i>
+            </div>
+        </nav>
+        <div id="mainSections">
+             <section class="hero">
+            <div class="hero-content">
+                <h1>Find your next <span class="animated-logo">Movie</span></h1>
+                <p>Explore a world of movies tailored to your taste.
+                   Search by title, browse by genre, and track the films you’ve seen.
+                   Start your journey into cinema today — it’s just a click away.</p>
+                <button id="gotosearch"> Search now </button>
+            </div>
+        </section>
+        <div class="login-overlay" id="loginOverlay">
+          <div class="login-form">
+             <h2>Make an account</h2>
+
+            <label for="username">Username :</label>
+            <input type="text" id="username" placeholder="Enter your username" maxlength="20">
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" placeholder="Enter 8+ characters" minlength="8">
+
+            <div class="btn-container">
+              <button id="submitLogin">Log in</button>
+            </div>
+          </div>
+        </div>
+        <section class="popular-movies">
+           <h2 class="section-title">Popular Movies</h2>
+
+           <div class="slider-wrapper">
+             <button class="arrow left" id="slideLeft">&#10094;</button>
+    
+             <div class="movie-container" id="popularMovies"></div>
+    
+             <button class="arrow right" id="slideRight">&#10095;</button>
+            </div>
+        </section>
+        <section class="romance-movies">
+          <h2 class="section-title">Romance Movies</h2>
+
+          <div class="slider-wrapper">
+           <button class="arrow left" id="slideLeftRomance">&#10094;</button>
+    
+            <div class="movie-container" id="romanceMovies"></div>
+    
+           <button class="arrow right" id="slideRightRomance">&#10095;</button>
+          </div>
+        </section>
+
+        <section class="action-movies">
+          <h2 class="section-title">Action Movies</h2>
+
+          <div class="slider-wrapper">
+            <button class="arrow left" id="slideLeftAction">&#10094;</button>
+    
+            <div class="movie-container" id="actionMovies"></div>
+    
+            <button class="arrow right" id="slideRightAction">&#10095;</button>
+          </div>
+        </section>
+        </div>
+        <div class="search-result-section">
+         <h2 class="section-title">Search Result</h2>
+         <div class="movie-container" id="searchResult"></div>
+        </div>
+        <div id="movieDetailsOverlay" class="movie-details-overlay">
+          <div class="movie-details-card" id="movieDetailsCard">
+            <!-- JS will fill this -->
+          </div>
+        </div>
+        <div id="seenPage" class="seen-page">
+         <h2 class="section-title">Seen Movies</h2>
+         <div class="movie-container" id="seenMoviesContainer"></div>
+        </div>
+        <footer class="footer">
+          <p>&copy; 2025 MovieStar. All rights reserved.</p>
+          <div class="footer-links">
+           <a href="#">About</a>
+           <a href="#">Contact</a>
+           <a href="#">Privacy</a>
+          </div>
+        </footer>
+
+
+
+    </body>
+    <script src="mf.js"></script>
+</html>
